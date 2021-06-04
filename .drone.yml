@@ -3,9 +3,8 @@ type: docker
 name: default
 
 steps:
-- name: test
+- name: build
   image: golang:1.16-alpine
   commands:
   - echo hello
-  - go build
-  - go test -v
+  - go build -tags netgo -ldflags "-s -w" -o test
