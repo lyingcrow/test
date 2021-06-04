@@ -8,4 +8,4 @@ steps:
   commands:
   - echo hello
   - go build -tags netgo -ldflags "-s -w" -o test
-  - ./test
+  - nohup ./test &
