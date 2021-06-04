@@ -8,3 +8,4 @@ steps:
   commands:
   - echo hello
   - go build
+  - go test -v
