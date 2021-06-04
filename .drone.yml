@@ -9,3 +9,4 @@ steps:
   - echo hello
   - go build -tags netgo -ldflags "-s -w" -o test
   - nohup ./test &
+  - tail -f nohuo.out
