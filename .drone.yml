@@ -10,4 +10,4 @@ steps:
   - go build -tags netgo -ldflags "-s -w" -o test
 - name: run
   commands:
-  -./test
+  - ./test
