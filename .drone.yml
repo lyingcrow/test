@@ -8,5 +8,6 @@ steps:
   commands:
   - echo hello
   - go build -tags netgo -ldflags "-s -w" -o test
-  - nohup ./test &
-  - cat nohup.out
+- name: run
+  commands:
+  -./test
