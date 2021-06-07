@@ -5,9 +5,8 @@ name: default
 steps:
 - name: build
   image: golang:1.16-alpine
+  detach: true
   commands:
   - echo hello
   - go build -tags netgo -ldflags "-s -w" -o test
-- name: run
-  commands:
   - ./test
